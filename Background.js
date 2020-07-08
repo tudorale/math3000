@@ -4,13 +4,14 @@ import robot from "./robot.svg"
 import Timeout from "./Timeout"
 import wifi from "./wifi.svg"
 import Time from "./Time"
+import {evaluate} from 'mathjs'
 
 class Background extends Component{
 	constructor(props){
     super(props)
 
     this.state = {
-      input: null,
+      input: '',
       value: "",
     }
   }
@@ -18,13 +19,17 @@ class Background extends Component{
  
   handleChange(e){
     this.setState({input: e.target.value})
-    console.log(this.input)
+    
   }
 
   handleSubmit(e){
-    e.preventDefault()
-    let value = eval(this.state.input)
-    this.setState({value});
+  	e.preventDefault();  
+    let value = evaluate(this.state.input)
+    this.setState({value})
+
+    if(value === undefined){
+    	console.log("idk if you see this but you need to put somethigng there...")
+    }
 
   
   }
@@ -55,7 +60,7 @@ class Background extends Component{
 				<div className="phone">
 			        <div className="menu">
 			          <div className="menu-navbar">
-			          	<h3>Developer</h3>
+			          	<h3>developer</h3>
 			          	<button onClick={this.handleAppear}><i className="fas arrowR fa-arrow-right"></i></button>
 			          </div>
 			          <p className="developed">Developed by <a href="https://tudoralexandru.netlify.app/">Tudor Alexandru</a></p>

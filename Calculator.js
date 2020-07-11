@@ -43,7 +43,7 @@ class Calculator extends Component{
 		return (
 			<>
 				<div className="main-calculator">
-					<h4>{this.props.math}@math3000<span className="add">:</span><span className="add1">~</span><span className="add2">$</span> </h4>
+					<p>{this.props.math}@math3000<span className="add">:</span><span className="add1">~</span><span className="add2">$</span> </p>
 				 	<form onSubmit={(e) => this.handleCalculatorSubmit(e)}>
 				 		<input type="text" placeholder={this.state.placeHolder} className="calculatorInput" onChange={(e) => this.handleCalculator(e)}/>
 				 	</form>

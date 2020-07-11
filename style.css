@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -12,19 +14,18 @@ html, body {
     height: 100%;
 }
 body{
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Hind', sans-serif;
 	background: radial-gradient( #12141b, #121513);
 }
 p{
 	font-size: 1.2rem;
+
 }
-h4{
-	font-size: 1.2rem;
-}
+
 
 .main{
 	padding-top: 30px;
-	padding-left: 20px;
+	padding-left: 15px;
 }
 .into{
 	display: flex;
@@ -35,18 +36,18 @@ h4{
 	width: 150px;
 	margin-left: 10px;
 	border: none;
-	margin-top: 0px;
+	margin-top: 1px;
 	background-color: transparent;
 	outline: none;
 	color: var(--green-color);
 	height: 25px;
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
 input::placeholder{
 	color: var(--pp-color);
 }
 
-.main .into h4{
+.main .into p{
 	color: var(--red-color); /* name color */
 
 }
@@ -66,6 +67,7 @@ input::placeholder{
 
 .help input{
 	width: 150px;
+	margin-top: 1px;
 }
 
 .helpCommands{
@@ -197,6 +199,7 @@ input::placeholder{
 	display: none;
 	flex-direction: row;
 	margin-top: 15px;
+
 }
 
 .main-calculator{
@@ -213,13 +216,14 @@ input::placeholder{
 	outline: none;
 	color: var(--green-color);
 	height: 25px;
-	font-size: 1rem;
+	font-size: 1.1rem;
+	margin-top: 1px;
 }
 input::placeholder{
 	color: var(--pp-color);
 }
 
-.main-calculator h4{
+.main-calculator p{
 	color: var(--red-color); 
 
 }

@@ -1,0 +1,329 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+  --red-color: #e02b59;
+  --green-color: #0ecf6f;
+  --pp-color: #059e51;
+}
+html, body {
+    height: 100%;
+}
+body{
+	font-family: 'Roboto Mono', monospace;
+	background: radial-gradient( #12141b, #121513);
+}
+p{
+	font-size: 1.2rem;
+}
+h4{
+	font-size: 1.2rem;
+}
+
+.main{
+	padding-top: 30px;
+	padding-left: 20px;
+}
+.into{
+	display: flex;
+	flex-direction: row;
+}
+
+.into input{
+	width: 150px;
+	margin-left: 10px;
+	border: none;
+	margin-top: 0px;
+	background-color: transparent;
+	outline: none;
+	color: var(--green-color);
+	height: 25px;
+	font-size: 1rem;
+}
+input::placeholder{
+	color: var(--pp-color);
+}
+
+.main .into h4{
+	color: var(--red-color); /* name color */
+
+}
+
+.add, .add2{
+	color: #03B55C; /* green color */
+}
+
+.add1{
+	color: #6b92bf;
+}
+
+.help{
+	display: none;
+	flex-direction: row;
+}
+
+.help input{
+	width: 150px;
+}
+
+.helpCommands{
+	margin-top: 10px;
+	color:	var(--green-color);
+	display: none;
+
+}
+.helpMenu{
+	margin-top: 10px;
+	color:	var(--green-color);
+	display: none;
+
+}
+.helpMenu2{
+	margin-top: 10px;
+	color:	var(--green-color);
+	display: none;
+
+}
+.helpMenu3{
+	margin-top: 10px;
+	color:	var(--green-color);
+	display: none;
+
+}
+
+.helpCommands p span{
+	color: #6f99c9;
+}
+.helpCommands p{
+	padding: 5px;
+}
+.helpMenu p span{
+	color: #6f99c9;
+}
+.helpMenu2 p span{
+	color: #6f99c9;
+}
+.helpMenu3 p span{
+	color: #6f99c9;
+}
+
+
+.free{
+	display: none;
+	flex-direction: row;
+	margin-top: 15px;
+}
+.unk{
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+	color:var(--green-color);
+	margin-left: 0px;
+	display: none;
+
+}
+
+
+
+.whoami{
+	color: var(--green-color);
+	display: none;
+	margin-top: 5px;
+}
+.whoami2{
+	color: var(--green-color);
+	display: none;
+	margin-top: 5px;
+}
+.whoami3{
+	color: var(--green-color);
+	display: none;
+	margin-top: 5px;
+}
+.whoami4{
+	color: var(--green-color);
+	display: none;
+	margin-top: 5px;
+}
+.info, .info3{
+	margin-top: 10px;
+	color: var(--green-color);
+	display: none;
+	font-size: 1.2rem;
+}
+.info a{
+	color: #6b92bf;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+.dev{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.info3 a{
+	color: #6b92bf;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+.info2{
+	margin-top: 10px;
+	color: var(--green-color);
+	display: none;
+}
+.info2 a{
+	color: #6b92bf;
+	text-decoration: none;
+	font-size: 1.2rem;
+	
+}
+
+.info4{
+	margin-top: 10px;
+	color: var(--green-color);
+	display: none;
+	font-size: 1.2rem;
+}
+.info4 a{
+	color: #03B55C;
+	text-decoration: none;
+	font-size: 1.2rem;
+	
+}
+
+
+.freeInput4{
+	display: none;
+	flex-direction: row;
+	margin-top: 15px;
+}
+
+.main-calculator{
+	display: none;
+	flex-direction: row;
+	margin-top: 5px;
+}
+
+.main-calculator input{
+	width: 130px;
+	margin-left: 10px;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	color: var(--green-color);
+	height: 25px;
+	font-size: 1rem;
+}
+input::placeholder{
+	color: var(--pp-color);
+}
+
+.main-calculator h4{
+	color: var(--red-color); 
+
+}
+
+.freeInput5{
+	display: none;
+	flex-direction: row;
+	margin-top: 15px;
+}
+
+.result{
+	color: var(--green-color);
+	display: none;
+	margin-top: 10px;
+}
+
+.error{
+	color: var(--green-color);
+	display: none;
+	margin-top: 10px;
+}
+.exit{
+	color: var(--green-color);
+	display: none;
+	margin-top: 10px;
+}
+.result span{
+	color: #6b92bf;
+}
+
+.limit{
+	color: var(--red-color);
+	margin-top: 25px;
+	margin-bottom: 25px;
+	display: none;
+}
+
+
+@media screen and (min-width: 1024px){
+	.main-calculator input{
+		width: 250px;
+	}
+	.help input{
+		width: 250px;
+	}
+	.into input{
+		width: 250px;
+	}
+
+	input{
+		width: 250px;
+	}
+
+}
+
+@media screen and (min-width: 1800px){
+	p{
+		font-size: 1.6rem;
+	}
+	h4{
+		font-size: 1.6rem;
+	}
+	.into input{
+		font-size: 1.5rem;
+		margin-top: 5px;
+	}
+
+	.main-calculator input{
+		font-size: 1.5rem;
+		margin-top: 5px;
+	}
+	.help input{
+		font-size: 1.5rem;
+	}
+
+	.info a{
+		font-size: 1.5rem;
+	}
+
+	.info2 a{
+		font-size: 1.6rem;
+	}
+
+	.info3 a{
+		font-size: 1.6rem;
+	}
+
+	.info4 a{
+		font-size: 1.6rem;
+	}
+
+	.main-calculator input{
+		width: 300px;
+	}
+	.help input{
+		width: 300px;
+	}
+	.into input{
+		width: 300px;
+	}
+
+	input{
+		width: 300px;
+
+	}
+
+}

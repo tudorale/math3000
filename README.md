@@ -1,5 +1,5 @@
 #  Math 3000
-This application is made in React, basically is a special calculator with an awesome design.
+Math 3000 is a react application, it is basically a terminal where you have different commands including the 'math' command which will give you the opportunity to type any math expression.
 # What I used
 HTML5, CSS3, React, Javascript and MathJS library
 # View
